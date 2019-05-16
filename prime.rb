@@ -1,9 +1,13 @@
 # Add  code here!
 def prime?(integer)
-  num = 2
-  until num > integer
-    return false if integer % num == 0
-    num += 1
+  if integer == -1
+    return false
+  else
+  (2..(integer-1)).each do |i|
+      return false if integer % i == 0
     end
   true
+
+end
+
 end
